@@ -1,0 +1,33 @@
+// @font-face { font-family: QuickSandBold; src: url('fonts/Quicksand-Bold.otf') format("opentype"); }
+// @font-face { font-family: QuickSandItalic; src: url('fonts/quick.otf') format("opentype"); }
+// @font-face { font-family: 'QuickSandLight'; src: url('fonts/Quicksand-Light.otf') format("opentype"); }
+// @font-face { font-family: 'QuickSandRegular'; src: url('fonts/Quicksand-Regular.otf') format("opentype"); }
+
+@font-face { font-family: QuickSandBold; src: url("<%= asset_path('Quicksand-Bold.otf') %>"); }
+@font-face { font-family: QuickSandItalic; src: url("<%= asset_path('Quicksand-Italic.otf') %>"); }
+@font-face { font-family: QuickSandLight; src: url("<%= asset_path('Quicksand-Light.otf') %>"); }
+@font-face { font-family: QuickSandRegular; src: url("<%= asset_path('Quicksand-Regular.otf') %>"); }
+
+.quick-light {
+  font-family: QuickSandLight;
+}
+
+.quick-italic {
+  font-family: QuickSandItalic;
+}
+
+.quick-bold {
+  font-family: QuickSandBold;
+}
+
+.quick-regular {
+  font-family: QuickSandRegular;
+}
+
+h1 {
+  font-family: QuickSandRegular !important;
+}
+
+li {
+  font-family: QuickSandBold !important;
+}

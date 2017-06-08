@@ -9,12 +9,11 @@
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
       <header>
         <%= render 'shared/header' %>
       </header>
+      <%= yield %>
     </div>
-    
-    <%= yield %>
   </body>
 </html>
