@@ -2,7 +2,7 @@
   background: image-url('Red_Wine.jpg');
   background-size: cover;
   margin-top: 50px;
-  min-height: 575px;
+  min-height: 600px;
   
   .row {
     margin-left: 0;
@@ -16,7 +16,7 @@
   border-bottom-right-radius: 100px;
 }
 
-.left-box-font {
+.left-box-text {
   background: linear-gradient(to left, #990012, #990012, #FFCCCC, #FFCCCC, #FFCCCC); /* Standard syntax */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,8 +25,8 @@
   position: relative;
 }
 
-.right-box-font {
-  background: linear-gradient(to right, #990012, #990012, #FFCCCC, #FFCCCC, #FFCCCC); /* Standard syntax */
+.right-box-text {
+  background: linear-gradient(to right, #990012, #990012, #990012, #FFCCCC, #FFCCCC, #FFCCCC); /* Standard syntax */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
@@ -44,15 +44,39 @@
   border-radius: 5px;
   box-shadow: -15px 15px 5px rgba(0, 0, 0, 0.7);
   //color: #990012;
-  background: -webkit-linear-gradient(left, #990012, #722f37, #FFCCCC); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #990012, #722f37, #FFCCCC); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #990012, #722f37, #FFCCCC); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #990012, #722f37, #FFCCCC); /* Standard syntax */
+  // background: -webkit-linear-gradient(left, #990012, #722f37, #FFCCCC); /* For Safari 5.1 to 6.0 */
+  // background: -o-linear-gradient(right, #990012, #722f37, #FFCCCC); /* For Opera 11.1 to 12.0 */
+  // background: -moz-linear-gradient(right, #990012, #722f37, #FFCCCC); /* For Firefox 3.6 to 15 */
+  // background: linear-gradient(to right, #990012, #722f37, #FFCCCC); /* Standard syntax */
   
-  border: solid 1px transparent;
+  background: -webkit-linear-gradient(left, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* Standard syntax */
+  
+  border: solid 2px transparent;
   border-left-color: #990012;
+  border-right-color: #FFCCCC;
   height: 60px;
   margin-top: 20px;
+}
+
+.left-button {
+  //display: none !important;
+  position: absolute;
+  right: 150px;
+  top: 60px;
+}
+
+.left-content {
+  background-color: #990012;
+  //background: linear-gradient(to right, #990012, #722f37, rgba(255, 204, 204, 0.5));
+  background: linear-gradient(to right, #990012, rgba(153, 0, 18, 0.5));
+}
+
+.left-content, .right-content {
+  border-radius: 5px;
+  color: white;
 }
 
 .right-box {
@@ -60,21 +84,26 @@
   border-radius: 5px;
   box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.7);
   //color: white;
-  background: -webkit-linear-gradient(right, #722f37, #FFCCCC); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, #722f37, #FFCCCC); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, #722f37, #FFCCCC); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, #990012, #722f37, #FFCCCC); /* Standard syntax */
+  // background: -webkit-linear-gradient(right, #722f37, #FFCCCC); /* For Safari 5.1 to 6.0 */
+  // background: -o-linear-gradient(left, #722f37, #FFCCCC); /* For Opera 11.1 to 12.0 */
+  // background: -moz-linear-gradient(left, #722f37, #FFCCCC); /* For Firefox 3.6 to 15 */
+  // background: linear-gradient(to left, #990012, #722f37, #FFCCCC); /* Standard syntax */
   
-  border: solid 1px transparent;
+  background: -webkit-linear-gradient(right, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, rgba(153, 0, 18, 0.9), rgba(114, 47, 55, 0.9), rgba(255, 204, 204, 0.9)); /* Standard syntax */
+  
+  border: solid 2px transparent;
+  border-left-color: #FFCCCC;
   border-right-color: #990012;
   height: 60px;
   margin-top: 20px;
 }
 
-.left-content, .right-content {
+.right-content {
   background-color: #990012;
-  border-radius: 5px;
-  color: white;
+  background: linear-gradient(to left, #990012, transparent);
 }
 
 // .inner-left-box {
