@@ -1,4 +1,5 @@
 <%#= image_tag 'Red_Wine.jpg', class: 'background_image' %>
+<% introduction = "I'm a web developer" %>
 
 <div class="background-image">
   <div class="row">
@@ -11,23 +12,49 @@
           <hr class="thick">
         </div>
       </div>
-      <h1 class="front-text">
-        Jesús Di Bari
+      <h1>
+        <span class="front-text">Jesús Di Bari</span>
       </h1>
     </div>
   </div>
   
   <div class="row two-boxes">
-    <div class="col-xs-offset-1 col-xs-3 left-box">
-      <h1>
-        BABALOO!
-      </h1>
+    <div class="col-xs-offset-1 col-xs-3">
+      <div class="left-box">
+        <div class="inner-left-box">
+          <h1 align="center" class="left-box-font">
+            WHO &nbsp;I &nbsp;AM
+          </h1>
+        </div>
+      </div>
     </div>
     
-    <div class="col-xs-offset-4 col-xs-3 right-box">
-      <h1 align="right">
-        BABALOO 2!
-      </h1>
+    <div class="col-xs-offset-4 col-xs-3">
+      <div class="right-box">
+        <div class="inner-right-box">
+          <h1 align="center" class="right-box-font">
+            WHAT &nbsp;I &nbsp;DO
+          </h1>
+        </div>
+      </div>
     </div>
   </div>
+  
+  <div class="row two-contents">
+    <div class="col-xs-offset-1 col-xs-5">
+      <div class="left-content">
+        <h3>
+          <%= introduction %>
+        </h3>
+      </div>
+    </div>
+    
+    <div class="col-xs-5">
+      <div class="right-content">
+        <h3>
+          WELL WELL HELLO FRIEND
+        </h3>
+      </div>
+    </div>
+  </div><!--.row-->
 </div>

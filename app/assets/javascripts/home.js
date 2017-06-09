@@ -12,4 +12,26 @@ $(document).on("ready", function(){
 		$(this).animate({ backgroundColor: "white" });
 		$(this).animate({ borderColor: "white" });
 	});
+	
+	$(".left-box").mouseenter(function(){
+		$(this).finish();
+		//$(this).css("border", "solid 1px");
+		$(this).animate({ borderColor: "white" });
+	});
+	$(".left-box").mouseleave(function(){
+		$(this).finish();
+		$(this).animate({ borderColor: "transparent" });
+		$(this).animate({ borderLeftColor: "#990012" }, { queue: false });
+		//$(this).css("border-left-color", "#990012");
+	});
+	
+	$(".right-box").mouseenter(function(){
+		$(this).finish();
+		$(this).animate({ borderColor: "white" });
+	});
+	$(".right-box").mouseleave(function(){
+		$(this).finish();
+		$(this).animate({ borderColor: "transparent" });
+		$(this).animate({ borderRightColor: "#990012" }, { queue: false });
+	});
 });
