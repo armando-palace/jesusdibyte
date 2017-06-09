@@ -1,8 +1,13 @@
 .background-image {
-  background: image-url('Red_Wine.jpg');
+  background-image: image-url('Red_Wine.jpg');
   background-size: cover;
   margin-top: 50px;
-  min-height: 600px;
+  height: 590px;
+  //min-height: 100%;
+  
+  background-attachment: fixed;
+  //background-position: center;
+  background-repeat: no-repeat;
   
   .row {
     margin-left: 0;
