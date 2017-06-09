@@ -1,0 +1,24 @@
+.left-button {
+  //display: none !important;
+  position: absolute;
+  right: 150px;
+  top: 60px;
+}
+
+.me-button {
+  //background-color: #990012 !important;
+  //border-color: white !important;
+  border-radius: 20px !important;
+  height: 40px !important;
+  left: 110px;
+  position: absolute;
+  top: 55px;
+  z-index: 1;
+}
+
+.right-button {
+  left: 115px;
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+}

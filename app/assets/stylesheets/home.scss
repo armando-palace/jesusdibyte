@@ -61,33 +61,12 @@
   margin-top: 20px;
 }
 
-.left-button {
-  //display: none !important;
-  position: absolute;
-  right: 150px;
-  top: 60px;
-}
-
-.right-button {
-  left: 115px;
-  position: absolute;
-  top: 60px;
-  z-index: 1;
-}
-
 .left-content {
   //background-color: #990012;
   background-color: rgba(0, 0, 0, 0.7);
   background: linear-gradient(to bottom, rgba(153, 0, 18, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
   //background: linear-gradient(to right, #990012, #722f37, rgba(255, 204, 204, 0.5));
   //background: linear-gradient(to right, #990012, rgba(153, 0, 18, 0.5));
-}
-
-.right-content {
-  background-color: rgba(0, 0, 0, 0.7);
-  background: linear-gradient(to bottom, rgba(153, 0, 18, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
-  // background-color: #990012;
-  // background: linear-gradient(to left, #990012, transparent);
 }
 
 .left-content, .right-content {
@@ -115,6 +94,13 @@
   border-right-color: #990012;
   height: 60px;
   margin-top: 20px;
+}
+
+.right-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to bottom, rgba(153, 0, 18, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  // background-color: #990012;
+  // background: linear-gradient(to left, #990012, transparent);
 }
 
 // .inner-left-box {
