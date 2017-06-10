@@ -1,3 +1,7 @@
+a {
+  color: white !important;
+}
+
 .background-image {
   background-image: image-url('Red_Wine.jpg');
   background-size: cover;
@@ -24,6 +28,12 @@
 .front-text {
   color: white;
   font-size: 65px;
+}
+
+h1, h2, h3 {
+  &:hover {
+    cursor: default;
+  }
 }
 
 .left-box-text {

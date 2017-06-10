@@ -5,3 +5,44 @@
   background-size: cover;
   height: 640px;
 }
+
+.portfolio-section {
+  margin: 0 !important;
+}
+
+.child-work {
+  width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-image: image-url("portfolio-section/bank2.png");
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.parent-work {
+  border: solid 1px;
+  height: 220px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.parent-work:hover .child-work,
+.parent-work:focus .child-work {
+  transform: scale(1.2);
+}
+
+// .parent {
+//   h3, p {
+//     position: absolute;
+//     left: 20px;
+//   }
+  
+//   h3 {
+//     bottom: 85px;
+//   }
+  
+//   p {
+//     bottom: -5px;
+//   }
+// }

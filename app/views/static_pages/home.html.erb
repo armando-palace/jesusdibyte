@@ -1,11 +1,11 @@
 <%#= image_tag 'Red_Wine.jpg', class: 'background_image' %>
-<% introduction = "I'm a programmer that has basic and solid knowledge of Ruby
+<% intro1 = "I'm a programmer that has basic and solid knowledge of Ruby
   on Rails framework for web developing. I have previous experience completing two
   courses in Udemy that included normal backend content and another to learn
   Behavior Driven Development (BDD) to have good practices testing features.
-  I also read an online book from Michael Hartl. I have enough understanding of
-  SQL language, experience with PostgreSQL, MySQL and SQLite. Other known languages:
-  Java, C, Pascal." %>
+  I also read the " %>
+<% intro2 = " from Michael Hartl. I have enough understanding of SQL language, experience with
+  PostgreSQL, MySQL and SQLite. Other known languages: Java, C, Pascal." %>
 
 <div class="background-image">
   <div class="row">
@@ -82,7 +82,9 @@
       <div align="justify">
         <h3>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <%= introduction %>
+          <%= intro1 %>
+          <%= link_to "Rails Tutorial online book", 'https://www.railstutorial.org/', target: :_blank %>
+          <%= intro2 %>
         </h3>
       </div>
     </div>
@@ -174,5 +176,23 @@
 </div><!--.tools-section-->
 
 <div class="background-image2">
+<div class="row portfolio-section">
+<div class="col-xs-12">
+  <div class="row">
+    <div class="col xs 12">
+      <h1 align="center">
+        <span class="front-text">MY PORTFOLIO</span>
+      </h1>
+    </div>
+  </div>
   
+  <div class="row">
+    <div class="col-xs-3">
+      <div class="parent-work">
+        <div class="child-work"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </div>
