@@ -1,9 +1,21 @@
+.git, .cssf, .db, .api {
+  bottom: 0;
+  position: relative;
+  -webkit-transition: bottom .5s;
+  transition: bottom .5s;
+  
+  &:hover {
+    bottom: 50px;
+  }
+}
+
 .tools-section {
   background-color: #FFF7F7;
   color: #722f37;
-  margin-top: -20px;
+  margin: 0 !important;
 }
 
-.tools-row .col-xs-3 img {
+.tools-row .col-xs-3 img,
+.secondary-tools-row .col-xs-2 img {
   width: 100%;
 }
