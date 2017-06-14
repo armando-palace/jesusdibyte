@@ -3,7 +3,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 640px;
+  height: 700px;
 }
 
 .portfolio-section {
@@ -14,7 +14,6 @@
   width: 100%;
   height: 100%;
   background-color: black; /* fallback color */
-  background-image: image-url("portfolio-section/bank2.png");
   background-position: center;
   background-size: cover;
   transition: all .5s;
@@ -30,6 +29,55 @@
 .parent-work:hover .child-work,
 .parent-work:focus .child-work {
   transform: scale(1.2);
+}
+
+.child-work-overlay::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.parent-work:hover .child-work:before,
+.parent-work:focus .child-work:before {
+  display: block;
+}
+
+.span-work {
+  color: white; /* Good thing we set a fallback color! */
+  display: none;
+  font-family: sans-serif;
+  padding: 25%;
+  position: absolute;
+}
+
+.parent-work:hover span,
+.parent-work:focus span {
+  display: block;
+}
+
+.work1 {
+  background-image: image-url("portfolio-section/mundogames.png");
+}
+
+.work2 {
+  background-image: image-url("portfolio-section/stocks.png");
+}
+
+.work3 {
+  background-image: image-url("portfolio-section/project.png");
+}
+
+.work4 {
+  background-image: image-url("portfolio-section/bank2.png");
+}
+
+.work5 {
+  background-image: image-url("portfolio-section/blog.png");
 }
 
 // .parent {
